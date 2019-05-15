@@ -15,8 +15,11 @@ sudo docker volume create test_keys
 # run bash
 #sudo docker run -it -p 6000:6000 -p 9090:9090 --mount source=test_db,target=/credits/test_db --mount source=test_keys,target=/credits/test_keys credits_testnet:latest bash
 
-# run node
+# run local repo node
 #sudo docker run -it -p 6000:6000 -p 9090:9090 --mount source=test_db,target=/credits/test_db --mount source=test_keys,target=/credits/test_keys credits_testnet:latest
+
+# run node docker repo
+#sudo docker run -it -p 6000:6000 -p 9090:9090 --mount source=main_db,target=/credits/main_db --mount source=main_keys,target=/credits/main_keys pvl1175/credits_mainnet:4.2.412.3
 
 # additional example
 #./client --db-path test_db/ --public-key-file test_keys/public.txt --private-key-file test_keys/private.txt
