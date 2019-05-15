@@ -5,7 +5,7 @@ rm build/Credits_Node_linux_x64_ver_4.2.412.3_test.tar.gz
 g++ -pthread source/runner.cpp  -o build/runner
 cp common/* build/
 
-sudo docker build -t credits_testnet .
+sudo docker build -t credits_testnet:4.2.412.3 .
 sudo docker volume create test_db
 sudo docker volume create test_keys
 
