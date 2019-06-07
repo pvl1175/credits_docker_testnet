@@ -7,7 +7,7 @@ cp common/* build/
 
 sudo docker build -t credits_testnet:4.2.416 .
 sudo docker volume create test_db
-sudo docker volume create test_keys
+sudo docker volume create test_keys 
 
 # some helpers
 #sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
